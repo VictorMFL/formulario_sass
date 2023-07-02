@@ -1,0 +1,48 @@
+@use '../mixin'
+@use '../variables'
+
+header
+  width: 100%
+
+nav
+  width: 100%
+  @include mixin.flex-center
+  justify-content: space-between
+
+section
+  @include mixin.flex-center
+
+  p
+    margin: 0 8px
+    font-weight: 700
+    color: variables.$gray-200
+
+.container_number
+  width: 28px
+  height: 28px
+  border-radius: 50%
+  @include mixin.flex-center
+  background-color: variables.$gray-100
+
+  p
+    font-weight: 700
+    color: variables.$gray-200
+    font-family: variables.$font-secondary
+
+.active_number
+  width: 28px
+  height: 28px
+  border-radius: 50%
+  @include mixin.flex-center
+  background-color: variables.$purple-mid
+
+  p
+    font-weight: 700
+    color: variables.$white
+    font-family: variables.$font-secondary
+
+.active_title 
+  color: variables.$gray-400    
+
+.icon
+  color: variables.$sucess-color
