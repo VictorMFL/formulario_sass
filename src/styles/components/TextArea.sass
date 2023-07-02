@@ -1,0 +1,36 @@
+@use '../mixin'
+@use '../variables'
+
+label 
+  @include mixin.text-bold  
+  color: variables.$gray-400
+
+textarea
+  width: 100%
+  font-size: 1rem
+  padding: 0.5rem 1rem
+  background-color: variables.$white
+  border: 1px solid variables.$gray-100
+  border-radius: 2px
+  margin-bottom: 1rem
+  outline: none
+  resize: none
+
+  &:hover, &:focus
+    border-color: variables.$purple-mid
+
+  &::placeholder
+    color: variables.$gray-200
+    @include mixin.text-regular  
+
+
+.container_button
+  justify-content: space-between !important  
+
+.button_voltar 
+  background-color: variables.$white
+  color: variables.$purple-mid  
+  border-color: variables.$purple-mid
+
+  &:hover
+    color: variables.$white
