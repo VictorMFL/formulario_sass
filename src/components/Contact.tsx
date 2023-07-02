@@ -2,8 +2,6 @@ import React, { useState, Dispatch, SetStateAction } from "react";
 
 import Input from "./Input";
 
-import "../styles/components/Contact.sass";
-
 type NextFormProps = {
   setActive: Dispatch<SetStateAction<number>>;
 };

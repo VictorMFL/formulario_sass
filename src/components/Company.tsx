@@ -2,8 +2,6 @@ import React, { useState, Dispatch, SetStateAction } from "react";
 
 import Input from "./Input";
 
-import "../styles/components/Company.sass";
-
 type NextFormProps = {
   setActive: Dispatch<SetStateAction<number>>;
 };
@@ -22,11 +20,11 @@ const Company = ({ setActive }: NextFormProps) => {
       <form onSubmit={handleSubmit}>
         <Input
           id="nome"
-          label="Nome"
+          label="Nome da empresa"
           required={true}
           type="text"
           key="Nome"
-          placeholder="Como prefere ser chamado"
+          placeholder="Qual é o nome da empresa"
           setValue={setName}
           value={name}
         />
