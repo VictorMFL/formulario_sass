@@ -3,6 +3,7 @@ import { useState } from "react";
 // components
 import NavBar from "./components/NavBar"
 import Contact from "./components/Contact";
+import Company from "./components/Company";
 
 const App = () => {
   const [active, setActive] = useState<number>(1);
@@ -11,6 +12,7 @@ const App = () => {
     <div className="container">
       <NavBar active={active} />
       {active === 1 && <Contact setActive={setActive} />}
+      {active === 2 && <Company setActive={setActive} />}
     </div>
   )
 }

@@ -1,6 +1,6 @@
 @use 'mixin'
 @use 'variables'
-    
+
 *
     padding: 0
     margin: 0
@@ -19,3 +19,45 @@ body
     border: 1px solid variables.$gray-100
     padding: 2rem
     font-family: variables.$font-primary
+
+main
+    width: 100%
+    opacity: 0
+    transform: translateX(100px)
+    animation: animeRight 0.5s forwards
+
+@keyframes animeRight
+    to
+        opacity: 1
+        transform: translateX(0)
+
+form
+    @include mixin.flex-center
+    flex-direction: column
+    align-items: baseline
+    width: 100%
+    padding-top: 2rem
+
+.container_button
+    width: 100%
+    @include mixin.flex-center
+    justify-content: flex-end
+
+button
+    @include mixin.flex-center
+    @include mixin.text-bold
+    padding: 1rem 2rem
+    border-radius: 6px
+    background-color: variables.$purple-mid
+    color: variables.$white
+    border: 1px solid transparent
+    margin-top: 1rem
+    cursor: pointer
+    outline: none
+
+    &:hover
+        background-color: variables.$purple-light
+
+    &:focus
+
+        background-color: variables.$purple-light
