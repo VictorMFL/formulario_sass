@@ -1,0 +1,19 @@
+@use '../mixin'
+@use '../variables'
+
+label 
+  @include mixin.text-bold  
+  color: variables.$gray-400
+
+input
+  width: 100%
+  height: 56px 
+  padding: 0.5rem 1rem
+  background-color: variables.$white
+  border: 1px solid variables.$gray-100
+  border-radius: 2px
+  margin-bottom: 1rem
+  outline: none
+
+  &:hover, &:focus
+    border-color: variables.$purple-mid
