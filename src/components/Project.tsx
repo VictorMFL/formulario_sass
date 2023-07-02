@@ -31,7 +31,7 @@ const Project = ({ setActive }: FormProps) => {
           value={objective}
           setValue={setObjective}
         />
-        <div className="container_button">
+        <div className="button_company">
           <button type="submit" className="button_voltar" onClick={backForm}>
             VOLTAR
           </button>

@@ -41,7 +41,12 @@ form
 .container_button
     width: 100%
     @include mixin.flex-center
-    justify-content: flex-end
+    justify-content: flex-end !important
+
+.button_company
+    width: 100%
+    @include mixin.flex-center
+    justify-content: space-between     
 
 button
     @include mixin.flex-center
@@ -62,3 +67,4 @@ button
     &:focus
 
         background-color: variables.$purple-light
+  
