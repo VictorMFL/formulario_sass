@@ -16,7 +16,7 @@ const Company = ({ setActive }: NextFormProps) => {
     setActive(3);
   }
 
-  function BackForm() {
+  function backForm() {
     setActive(1);
   }
 
@@ -57,7 +57,7 @@ const Company = ({ setActive }: NextFormProps) => {
           rows={5}
         />
         <div className="container_button">
-          <button type="submit" className="button_voltar" onClick={BackForm}>
+          <button type="submit" className="button_voltar" onClick={backForm}>
             VOLTAR
           </button>
           <button type="submit">Continuar</button>
