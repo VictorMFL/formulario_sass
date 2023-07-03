@@ -7,8 +7,12 @@
   font-size: 1rem
   line-height: 150%
   font-weight: 700
-    
+
 @mixin flex-center
   display: flex
   align-items: center
-  justify-content: center    
+  justify-content: center
+
+@mixin mobile
+  @media( max-width: 620px )
+    @content

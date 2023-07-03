@@ -29,7 +29,7 @@ const NavBar = ({ active }: NavBarProps) => {
             Contato
           </p>
         </section>
-        <AiOutlineRight size={24} />
+        <AiOutlineRight size={24} className="arrow_right" />
         <section>
           {active === 3 ? (
             <BsFillCheckCircleFill size={28} className="icon" />
@@ -42,7 +42,7 @@ const NavBar = ({ active }: NavBarProps) => {
           )}
           <p className={active === 2 || active === 3 ? "active_title" : ""}>Empresa</p>
         </section>
-        <AiOutlineRight size={24} />
+        <AiOutlineRight size={24} className="arrow_right" />
         <section>
           <div className={active === 3 ? "active_number" : "container_number"}>
             <p>3</p>

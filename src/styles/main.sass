@@ -20,6 +20,10 @@ body
     padding: 2rem
     font-family: variables.$font-primary
 
+    @include mixin.mobile
+        width: 100%
+        padding: 0.8rem
+
 main
     width: 100%
     opacity: 0
@@ -46,7 +50,7 @@ form
 .button_company
     width: 100%
     @include mixin.flex-center
-    justify-content: space-between     
+    justify-content: space-between
 
 button
     @include mixin.flex-center
@@ -59,7 +63,7 @@ button
     margin-top: 1rem
     cursor: pointer
     outline: none
-    transition: 0.4s  
+    transition: 0.4s
 
     &:hover
         background-color: variables.$purple-light
@@ -67,4 +71,3 @@ button
     &:focus
 
         background-color: variables.$purple-light
-  
